@@ -11,7 +11,7 @@ import pandas as pd
 # Load and prep data
 # -----------------------------
 
-world = gpd.read_file("C:/Users/16122/.vscode/GlobalMap/110m_cultural/ne_110m_admin_0_countries.shp")
+world = gpd.read_file("C:/Users/16122/Documents/MapSite/llama-homen/110m_cultural/ne_110m_admin_0_countries.shp")
 world['geometry'] = world['geometry'].buffer(0)
 world['ADM0_A3'] = world['ADM0_A3'].fillna('UNK')
 world['POP_EST'] = world['POP_EST'].fillna(0)
